@@ -1,0 +1,6 @@
+System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		ChromeOptions option = new ChromeOptions();
+		option.addArguments("--disable-notifications");
+		WebDriver driver = new ChromeDriver(option);
+		driver.manage().window().maximize();
+		driver.get("https://www.justdial.com/");
